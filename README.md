@@ -6,10 +6,14 @@ This module requires completion of previous modules:
  - [Celebrity Recognition](https://github.com/darwaishx/celebrity-recognition/tree/master/1-celebrity-recognition)
  - [Recognize Custom Celebrities](https://github.com/darwaishx/celebrity-recognition/tree/master/2-recognize-custom-celebrities)
 
-## Extend Media Analysis Solution
-In this step we will create a SageMaker Notebook instance using CloudFormation template. SageMaker is not required to use Rekognition, but we will use SageMaker as IDE for quick prototyping and to learn various Rekognition APIs.
+## Deploy Solution
+In this step we will deploy the solution using CloudFormation template. This CloudFormation template will perform following actions:
 
-1. Click on one of the buttons below to launch CloudFormation template in an AWS region.
+1. Create and deploy REST APIs using AWS API Gateway. It will provide public endpoints to accept request from Client.
+2. Create Lambda function to interface with AWS Rekognition to recognize mainstream and custom celebrities.
+3. Create a S3 bucket, copy required files to host HTML based client to test this solution.
+
+Click on **Launch Stack** button below to launch CloudFormation template in US East AWS region.
 
 Region| Launch
 ------|-----
