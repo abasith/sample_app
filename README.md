@@ -19,8 +19,11 @@ Region| Launch
 ------|-----
 US East (N. Virginia) | [![Create IAM Role for SageMaker us-east-1](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?stackName=X-Ray&templateURL=https://s3.amazonaws.com/husbasit-dl-artifacts/AnalyzeImage.yaml)
 
-2. Under Create stack, check both checkboxes for "I acknowledge that AWS CloudFormation might create IAM resources with custom names" and "I acknowledge that AWS CloudFormation might create IAM resources.". Click Create.
+2. Under Create stack, check both checkboxes for "I acknowledge that AWS CloudFormation might create IAM resources with custom names" and "I acknowledge that AWS CloudFormation might create IAM resources.". Click **Create Change Set** button.
 ![](assets/Cf1.png)
+
+3. Click on **Execute** button.
+![](assets/Cf2.png)
 
 ## Other Steps
 
