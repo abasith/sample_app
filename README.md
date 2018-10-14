@@ -9,16 +9,18 @@ This module requires completion of previous modules:
 ## Deploy Solution
 In this step we will deploy the solution using CloudFormation template. This CloudFormation template will perform following actions:
 
-1. Create and deploy REST APIs using AWS API Gateway. It will provide public endpoints to accept request from Client.
-2. Create Lambda function to interface with AWS Rekognition to recognize mainstream and custom celebrities.
-3. Create a S3 bucket, copy required files to host HTML based client to test this solution.
+- Create and deploy REST APIs using AWS API Gateway. It will provide public endpoints to accept request from Client.
+- Create Lambda function to interface with AWS Rekognition to recognize mainstream and custom celebrities.
+- Create a S3 bucket, copy required files to host HTML based client to test this solution.
 
-Click on **Launch Stack** button below to launch CloudFormation template in US East AWS region.
+1. Click on **Launch Stack** button below to launch CloudFormation template in US East AWS region.
 
 Region| Launch
 ------|-----
 US East (N. Virginia) | [![Create IAM Role for SageMaker us-east-1](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?stackName=X-Ray&templateURL=https://s3.amazonaws.com/husbasit-dl-artifacts/AnalyzeImage.yaml)
 
+2. Under Create stack, check both checkboxes for "I acknowledge that AWS CloudFormation might create IAM resources with custom names" and "I acknowledge that AWS CloudFormation might create IAM resources.". Click Create.
+![](assets/Cf-1.png)
 
 ## Other Steps
 
