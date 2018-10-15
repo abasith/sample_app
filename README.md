@@ -53,6 +53,19 @@ US East (N. Virginia) | [![Create IAM Role for SageMaker us-east-1](http://docs.
 
 ![](assets/ClientHtml1.png)
 
+## Verify Lambda environment variables
+In this section we need to verify that environment variables defined in Lambda function are set to correct values i.e. pointing to right DynamoDB table and custom Rekognition collection created in previous lab.
+
+1. Go to AWS Lambda in AWS Console at https://console.aws.amazon.com/lambda/
+
+2. Enter your CloudFormation Stack name in the Search text box and press **Enter** key. This will show a list of functions. Click on the function name ending in **-RecognizeCelebrities**
+
+![](assets/Lambda1.png)
+
+3. Scroll down to see **Environment variables** section. Verify if the environment variables **dynamodbTable** and **rekCollectionName** point to correct values. **dynamodbTable** should point to the DynamoDB Table you created in your previous lab to store custom celebrity data. **rekCollectionName** should point to the custom Rekognition Collection you created in the previous lab.
+
+![](assets/Lambda2.png)
+
 ## Modify HTML Client
 In this section we will modify the HTML Client to point it to the REST endpoint service we have deployed on API Gateway using CloudFormation.
 
@@ -116,18 +129,17 @@ apiGatewayUrl = 'https://th123abcd1.execute-api.us-east-1.amazonaws.com/Prod/Rec
 
 7. Review and click **Upload** on **Review** screen.
 
-## Verify Lambda environment variables
+## Test the solution
 
+1. Access your hosted client HTML page again.
 
+ **Hint:** if you don't have the URL, you can get it from CloudFormation Stack **bucketURL** Output variable  **OR** Repeat **Step 7** of [Deploy Solution](#deploy-solution) and copy the value for **BucketName** from **Outputs**.
 
+2. Click on **Recognize Celebrities** button and you will see the output(response) coming from Amazon Rekognition. 
 
-
-## Analyze Images
-
-## Other?
 
 ## Completion
-You have successfully installed and configured Media Analysis Solution. You then learned how to use managed Machine Learning Application Services to extract metadata from your media files. You also learned how to extend Media Analysis Solution and detect and filter inappropriate content.
+
 
 ## Clean up
 Step to clean up resources.
