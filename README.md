@@ -7,7 +7,7 @@ This module requires completion of previous modules:
  - [Recognize Custom Celebrities](https://github.com/darwaishx/celebrity-recognition/tree/master/2-recognize-custom-celebrities)
 
 ## Deploy Solution
-In this step we will deploy the solution using CloudFormation template. This CloudFormation template will perform following actions:
+In this section we will deploy the solution using CloudFormation template. This CloudFormation template will perform following actions:
 
 - Create and deploy REST APIs using AWS API Gateway. It will provide public endpoints to accept request from Client.
 - Create Lambda function to interface with AWS Rekognition to recognize mainstream and custom celebrities.
@@ -37,15 +37,20 @@ US East (N. Virginia) | [![Create IAM Role for SageMaker us-east-1](http://docs.
 7. Click on **Outputs** tab to view the details of Lambda function, API Gateway APIs and Client HTML file created by CloudFormation.
 ![](assets/Cf6.png)
 
-8. Clink the **bucketURL** link to load the client HTML page hosted from your S3 bucket.
+8. Click the **bucketURL** link to load the client HTML page hosted from your S3 bucket.
 ![](assets/Cf7.png)
 Following is the Client HTML page.
 ![](assets/ClientHtml1.png)
 
 ## Modify HTML Client
-In this step we will modify the HTML Client to point it to the REST endpoint service we have deployed on API Gateway using CloudFormation.
+In this section we will modify the HTML Client to point it to the REST endpoint service we have deployed on API Gateway using CloudFormation.
 
+1. Repeat **Step 7** of previous section and copy the value for **BucketName** from **Outputs**.
 
+2. Go to Amazon S3 in AWS Console at https://s3.console.aws.amazon.com/s3/
+
+3. Type the name of S3 bucket copied in **Step 1** in **Search for buckets** textbox. It will display the bucket in the list. Click on the Bucket Name as shown in this screen shot.
+![](assets/ClientHtml2.png)
 
 ## Other Steps
 
