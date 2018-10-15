@@ -39,6 +39,7 @@ US East (N. Virginia) | [![Create IAM Role for SageMaker us-east-1](http://docs.
 
 8. Clink the **bucketURL** link to load the client HTML page hosted from your S3 bucket.
 ![](assets/Cf7.png)
+Following is the Client HTML page.
 ![](assets/ClientHtml1.png)
 
 ## Modify HTML Client
