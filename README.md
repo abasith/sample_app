@@ -25,6 +25,27 @@ US East (N. Virginia) | [![Create IAM Role for SageMaker us-east-1](http://docs.
 3. Click on **Execute** button.
 ![](assets/Cf2.png)
 
+4. You should now see the screen with status **CREATE_IN_PROGRESS**. Click on the **Stacks** link in the top navigation to see current CloudFormation stacks.
+![](assets/Cf3.png)
+
+5. Click on the checkbox next to the stack to see additional details below.
+![](assets/Cf4.png)
+
+6. Wait until CloudFormation stack status changes to  **CREATE_COMPLETE**.
+![](assets/Cf5.png)
+
+7. Click on **Outputs** tab to view the details of Lambda function, API Gateway APIs and Client HTML file created by CloudFormation.
+![](assets/Cf6.png)
+
+8. Clink the **bucketURL** link to load the client HTML page hosted from your S3 bucket.
+![](assets/Cf7.png)
+![](assets/ClientHtml1.png)
+
+## Modify HTML Client
+In this step we will modify the HTML Client to point it to the REST endpoint service we have deployed on API Gateway using CloudFormation.
+
+
+
 ## Other Steps
 
 ## Analyze Images
