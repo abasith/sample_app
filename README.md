@@ -7,11 +7,7 @@ This module requires completion of previous modules:
  - [Recognize Custom Celebrities](https://github.com/darwaishx/celebrity-recognition/tree/master/2-recognize-custom-celebrities)
 
 ## Deploy Solution
-In this section we will deploy the solution using CloudFormation template. This CloudFormation template will perform following actions:
-
-- Create and deploy REST APIs using AWS API Gateway. It will provide public endpoints to accept request from Client.
-- Create Lambda function to interface with AWS Rekognition to recognize mainstream and custom celebrities.
-- Create a S3 bucket, copy required files to host HTML based client to test this solution.
+In this section we will deploy the solution using CloudFormation template. This CloudFormation template will create required resources for this solution including Lambda functions, API Gateway endpoint and a HTML based client to test the solution.
 
 1. Click on **Launch Stack** button below to launch CloudFormation template in US East AWS region.
 
@@ -135,11 +131,11 @@ apiGatewayUrl = 'https://th123abcd1.execute-api.us-east-1.amazonaws.com/Prod/Rec
 
  **Hint:** if you don't have the URL, you can get it from CloudFormation Stack **bucketURL** Output variable  **OR** Repeat **Step 7** of [Deploy Solution](#deploy-solution) and copy the value for **BucketName** from **Outputs**.
 
-2. Click on **Recognize Celebrities** button and you will see the output(response) coming from Amazon Rekognition. 
+2. Click on **Recognize Celebrities** button and you will see the output(response) coming from Amazon Rekognition.
 
 
 ## Completion
-
+You have successfully created Amazon Prime X-Ray feature using AWS Rekognition, AWS Lambda, API Gateway. This solution recognizes mainstream celebrities as well as custom celebrities.
 
 ## Clean up
-Step to clean up resources.
+TODO: Basit to modify Cloudformation template.
